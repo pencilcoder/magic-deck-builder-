@@ -2,9 +2,26 @@
 <html>
 <head>
 	<meta charset="UTF-8">	
-	<title>The Most Awesome Deckbuilder Ever!</title> 
+	<title>The Most Awesome Deckbuilder Ever!</title>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body>
-<h1>Magic's Most Awesome Deckbuilder Ever!</h1>
+	<h1>Magic's Most Awesome Deckbuilder Ever!</h1>
+	<form id="card-manual" action="results" method="get">
+		<div>
+			<label for="searchbar">Search Your Cards:</label>
+			<input type="text" id="searchbar"></textarea>
+			<div class="button">
+				<button type="submit">Press to Search!</button>
+			</div>
+		</div>
+	</form>
+	<script>
+		// $(document).ready(function(){
+		// 	$("#card-manual").submit(function(e){
+				
+		// 	})
+		// });
+	</script>
 </body>
 </html>

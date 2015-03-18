@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<title>The Most Awesome Deckbuilder Ever!</title> 
+</head>
+<body>
+	<h1>Magic's Most Awesome Deckbuilder Ever!</h1>
+	<h2>Results for <%= cardquery %></h2>
+	<% cards.forEach(function(card){ %>
+		<article class="card">
+			<h3 class="name"><%- JSON.stringify(card.name) %></h3>
+			<div class="mana-cost"><%- JSON.stringify(card.manaCost) %></div>
+			<img class="graphics" src=<%- JSON.stringify(card.images.gatherer) %> />
+		</article>
+	<% }); %>
+	<script>
+		var cardsArr = <%- JSON.stringify(cards); %>;
+		console.log(cardsArr);
+	</script>
+</body>
+</html>
